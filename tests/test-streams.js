@@ -114,6 +114,12 @@ module.exports = {
     abr: true,
     blacklist_ua: ['internet explorer']
   },
+  // fmp4BitmovinHevc: {
+  //   url: 'https://bitmovin-a.akamaihd.net/content/dataset/multi-codec/hevc/stream_fmp4.m3u8',
+  //   description: 'HLS HEVC fMP4 by Bitmovin (Safari and Edge? only as of 2020-08)',
+  //   abr: true,
+  //   blacklist_ua: ['internet explorer']
+  // },
   offset_pts: {
     url: 'https://test-streams.mux.dev/pts_shift/master.m3u8',
     description: 'DK Turntable, PTS shifted by 2.3s',
