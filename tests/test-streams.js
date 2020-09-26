@@ -210,11 +210,13 @@ module.exports = {
   },
   AppleLowLatencyHls: {
     url: 'https://ll-hls-test.apple.com/master.m3u8',
-    description: 'Apple Low-Latency HLS sample (TS segments)'
+    description: 'Apple Low-Latency HLS sample (TS segments)',
+    live: true
   },
   AppleLowLatencyCmafHls: {
     url: 'https://ll-hls-test.apple.com/cmaf/master.m3u8',
-    description: 'Apple Low-Latency HLS sample (fMP4 segments)'
+    description: 'Apple Low-Latency HLS sample (fMP4 segments)',
+    live: true
   },
   AppleLowLatencyHlsHoldBack: {
     url: 'https://playertest.longtailvideo.com/adaptive/low-latency-hls/archived/hold-back-8s.m3u8',
