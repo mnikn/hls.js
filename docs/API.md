@@ -45,6 +45,7 @@
   - [`enableWorker`](#enableworker)
   - [`enableSoftwareAES`](#enablesoftwareaes)
   - [`startLevel`](#startlevel)
+  - [`invalidLevels`](#invalidLevels)
   - [`fragLoadingTimeOut` / `manifestLoadingTimeOut` / `levelLoadingTimeOut`](#fragloadingtimeout--manifestloadingtimeout--levelloadingtimeout)
   - [`fragLoadingMaxRetry` / `manifestLoadingMaxRetry` / `levelLoadingMaxRetry`](#fragloadingmaxretry--manifestloadingmaxretry--levelloadingmaxretry)
   - [`fragLoadingMaxRetryTimeout` / `manifestLoadingMaxRetryTimeout` / `levelLoadingMaxRetryTimeout`](#fragloadingmaxretrytimeout--manifestloadingmaxretrytimeout--levelloadingmaxretrytimeout)
@@ -613,6 +614,12 @@ Enable to use JavaScript version AES decryption for fallback of WebCrypto API.
 (default: `undefined`)
 
 When set, use this level as the default hls.startLevel. Keep in mind that the startLevel set with the API takes precedence over config.startLevel configuration parameter.
+
+### `invalidLevels`
+
+(default: `undefined`)
+
+When set, filter the invalid levels.
 
 ### `fragLoadingTimeOut` / `manifestLoadingTimeOut` / `levelLoadingTimeOut`
 
