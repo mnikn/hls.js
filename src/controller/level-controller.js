@@ -130,6 +130,10 @@ export default class LevelController extends EventHandler {
       bitrateStart = levels[0].bitrate;
       // sort level on bitrate
       levels.sort((a, b) => a.bitrate - b.bitrate);
+      // filter invalid levels from config
+      if (this.hls.config.invalidLevels) {
+        levels = levels.filter((_, index) => !this.hls.config.invalidLevels.includes(index));
+      }
       this._levels = levels;
       // find index of first level in sorted levels
       for (let i = 0; i < levels.length; i++) {
